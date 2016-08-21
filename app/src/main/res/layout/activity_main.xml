@@ -7,6 +7,12 @@
     tools:context="jp.techacademy.tomonari.watanabe.autoslideshowapp.MainActivity">
 
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="進む"
+        android:textSize="20sp"
+        android:id="@+id/next" />
 
     <Button
         android:layout_width="wrap_content"
@@ -22,15 +28,7 @@
         android:text="再生"
         android:textSize="20sp"
         android:id="@+id/show"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="進む"
-        android:textSize="20sp"
-        android:id="@+id/next"
-        />
+        android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,6 +36,7 @@
         android:text=""
         android:textSize="20sp"
         android:id="@+id/pages"
+        android:layout_gravity="center_horizontal"
         />
 
     <ImageView

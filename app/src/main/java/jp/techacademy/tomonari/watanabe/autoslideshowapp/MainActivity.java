@@ -67,11 +67,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button prev = (Button) findViewById(R.id.prev);
 
         if (v.getId() == R.id.prev){
-                page = --page;
+                --page;
                 getContentsInfo();
 
             } else if (v.getId() == R.id.next){
-                page = ++page;
+                ++page;
                 getContentsInfo();
 
             } else if (v.getId() == R.id.show){
@@ -190,7 +190,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mHandler.post(new Runnable() {
                 @Override
                 public void run() {
-                    page = ++page;
+                    ++page;
                     getContentsInfo();
                 }
             });
@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     MyTimerTask timerTask = null;
     Timer mainTimer = null;
-    Handler mHandler = new Handler();   //UI Threadへのpost用ハンドラ
+    Handler mHandler = new Handler();      //UI Threadへのpost用ハンドラ
 
 
 }
